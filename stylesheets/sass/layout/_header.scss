@@ -1,0 +1,56 @@
+header.branding {
+  width: $page-width;
+  margin: 0 auto;
+
+  section.usc {
+    background: #000000;
+    padding-top: 5px;
+
+    img {
+      float: right;
+      position: relative;
+      top: -10px;
+      left: -10px;
+    }
+
+    ul {
+      position: relative;
+      top: 30px;
+      left: 15px;
+
+      a {
+        color: #fff;
+        font-size: 14px;
+      }
+
+      a:hover {
+        border-bottom: none;
+        color: #ffcc00;
+      }
+
+      @include horizontal-list(10px, 10px, none);
+    }
+
+    @include clearfix;
+  }
+
+  section.scctsi {
+    background: #eee;
+
+    h1 {
+      padding: 20px 15px 5px 15px;
+      font-size: 32px;
+      color: #990000;
+      font-weight: 400;
+    }
+
+    h2 {
+      padding: 5px 15px 25px 20px;
+      color: #666;
+      font-size: 16px;
+      float: left;
+    }
+
+    @include clearfix;
+  }
+}

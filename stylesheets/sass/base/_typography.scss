@@ -1,0 +1,19 @@
+body {
+  font-family: $font-stack;
+  font-size: 12px;
+  color: #333;
+  background: #faf9f2;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-stack;
+}
