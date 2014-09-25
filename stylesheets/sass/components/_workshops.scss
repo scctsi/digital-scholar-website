@@ -1,5 +1,5 @@
 .workshop {
-  @include clearfix;
+  @include span-columns(9);
 
   header {
     margin-bottom: 15px;
@@ -20,8 +20,12 @@
 
     i {
       font-size: 20px;
-      margin-right: 5px;
+      margin-right: 10px;
       color: #999; 
+    }
+
+    i:hover {
+      cursor: pointer;
     }
 
     i.fa-plus-square {
@@ -33,7 +37,7 @@
     }
   }
 
- h3.open {
+  h3.open {
     i.fa-plus-square {
       display: none;
     }
@@ -45,6 +49,21 @@
 
   .answer {
     display: none;
+    font-size: 14px;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    margin-left: 15px;
+
+    ul {
+      h4 {
+        font-weight: 700;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
   }
 
   section.videos {
@@ -57,6 +76,7 @@
     padding: 15px;
     border: 1px solid #ccc;
     margin-right: 30px;
+    text-align: center;
 
     a:hover {
       border-bottom: none;

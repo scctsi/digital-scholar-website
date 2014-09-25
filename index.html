@@ -10,10 +10,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="stylesheets/app.css" rel="stylesheet">
+    <link href="stylesheets/jquery.fancybox.css" rel="stylesheet" media="screen">
+
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 
     <script src="javascripts/vendor/modernizr-2.6.2.min.js"></script>
+    <script>
+      function loadCampaignWidget() {
+        document.getElementById('ideascale-campaign-widget').innerHTML = '<iframe allowTransparency="true" src="//scctsi-digital-scholar.ideascale.com/userimages/accounts/92/920932/campaign-widget-1949.html?ts=1411428212101" frameborder="0" scrolling="auto" style="width: 180px; height: 350px;"></iframe>'
+      }
+
+      window.onload = loadCampaignWidget;//you may change this line
+    </script>
+
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -30,8 +40,14 @@
       </section>
 
       <section class="scctsi">
+        <img id="digital-scholar-logo" src="images/graduation-cap-512.png" alt="Graduation Cap"/>
         <h1>Digital Scholar Training Series</h1>
         <h2>Helping Researchers Better Utilize the Web</h2>
+        <aside>
+          <ul>
+            <li><img src="images/gold-logo.png"/>Powered by <a href="http://www.sc-ctsi.org" target="_blank">SC CTSI</a></li>
+          </ul>
+        </aside>
       </section>
     </header>
 
@@ -42,31 +58,143 @@
           <h2>Workshop 1: Become a successful Digital Scholar</h2>
         </header>
 
-        <h3>Videos</h3>
+        <h3>Watch the Training Videos</h3>
 
         <section class="videos">
           <figure class="video">
-            <a href="#"><img src="http://img.youtube.com/vi/JXqszZVy400/1.jpg"></img></a>
-            <figcaption>Lecture</figcaption>
+            <a class="fancybox-media" href="https://www.youtube.com/watch?v=JXqszZVy400"><img src="http://img.youtube.com/vi/JXqszZVy400/1.jpg" alt="Training Video"/></a>
+            <figcaption>Training Video</figcaption>
           </figure>
 
           <figure class="video">
-            <a href="#"><img src="http://img.youtube.com/vi/JXqszZVy400/1.jpg"></img></a>
-            <figcaption>Testimonials</figcaption>
+            <a href="#"><img src="http://img.youtube.com/vi/JXqszZVy400/1.jpg" alt="What our participants are saying"/></a>
+            <figcaption>What our participants are saying</figcaption>
           </figure>
         </section>
 
-        <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Workshop Description</h3>
-        <h3>Syllabus</h3>
-        <h3>Recommended Reading</h3>
-        <h3>FAQ</h3>
-        <h3>Templates</h3>
-
+        <section class="expandable-list">
+          <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Workshop Description</h3>
+          <div class="answer">
+            <p>In this workshop, we will provide an overview of Digital Scholarship and explore examples of scholars who have successfully used digital approaches to advance their research and careers.</p>
+          </div>
+          <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Syllabus</h3>
+          <div class="answer"></div>
+          <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Recommended Reading</h3>
+          <div class="answer"></div>
+          <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>FAQ</h3>
+          <div class="answer">
+            <ul class="faq">
+              <li><h4>Will I get a certificate after completing this workshop?</h4><p>Yes. Participants who complete individual workshops or the entire series will receive a certificate signed by Jonathan M. Samet, MD, MS, Distinguished Professor and Flora L. Thornton Chair, Department of Preventive Medicine, Keck School of Medicine of USC, Director, USC Institute for Global Health, Director of the SC CTSI Education, Career Development, and Ethics program, and lead instructor Katja Reuter, PhD, director of Digital Strategy and the eHome program at SC CTSI.</p></li>
+              <li><h4>What resources will I need for this workshop?</h4><p>Please bring your computer and your phone. You will need Internet access.</p></li>
+              <li><h4>What tools will we be using in this workshop?</h4><p>We will introduce several web-based approaches to scholarship including social media tools.</p></li>
+            </ul>
+          </div>
+          <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Templates</h3>
+          <div class="answer"></div>
+        </section>
       </article>
 
-      <sidebar>
+      <!-- <article class="workshop">
+        <header>
+          <h2>Workshop 1: Become a successful Digital Scholar</h2>
+        </header>
 
-      </sidebar>
+        <h3>Training Videos Coming Soon</h3>
+
+        <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Workshop Description</h3>
+        <div class="answer"></div>
+        <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Syllabus</h3>
+        <div class="answer"></div>
+        <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Recommended Reading</h3>
+        <div class="answer"></div>
+        <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>FAQ</h3>
+        <div class="answer"></div>
+        <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Templates</h3>
+        <div class="answer"></div>
+      </article>
+
+      <article class="workshop">
+        <header>
+          <h2>Workshop 1: Become a successful Digital Scholar</h2>
+        </header>
+
+        <h3>Training Videos Coming Soon</h3>
+
+        <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Workshop Description</h3>
+        <div class="answer"></div>
+        <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Syllabus</h3>
+        <div class="answer"></div>
+        <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Recommended Reading</h3>
+        <div class="answer"></div>
+        <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>FAQ</h3>
+        <div class="answer"></div>
+        <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Templates</h3>
+        <div class="answer"></div>
+      </article>
+
+      <article class="workshop">
+        <header>
+          <h2>Workshop 1: Become a successful Digital Scholar</h2>
+        </header>
+
+        <h3>Training Videos Coming Soon</h3>
+
+        <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Workshop Description</h3>
+        <div class="answer"></div>
+        <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Syllabus</h3>
+        <div class="answer"></div>
+        <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Recommended Reading</h3>
+        <div class="answer"></div>
+        <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>FAQ</h3>
+        <div class="answer"></div>
+        <h3><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i>Templates</h3>
+        <div class="answer"></div>
+      </article> -->
+
+      <aside>
+
+        <section class="widget featured">
+          <header class="widget-header arrow-box">
+            <h3>Need Help?</h3>
+          </header>
+          <section class="widget-content">
+            <a href="#">Request a free consultation today</a>
+          </section>
+        </section>
+
+        <section class="widget">
+          <header class="widget-header arrow-box">
+            <h3>Suggest New Topics</h3>
+          </header>
+          <section class="widget-content">
+            <div id="ideascale-campaign-widget"></div>
+          </section>
+        </section>
+
+        <section class="widget">
+          <header class="widget-header arrow-box">
+            <h3>Partners</h3>
+          </header>
+          <section class="widget-content">
+            <ul class="partners">
+              <li><a href="http://symplur.com/" target="_blank">Symplur</a></li>
+              <li><a href="https://experiment.com/" target="_blank">Experiment</a></li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="widget">
+          <header class="widget-header arrow-box">
+            <h3>Join the Conversation</h3>
+          </header>
+          <section class="widget-content">
+            <a class="twitter-timeline" href="https://twitter.com/hashtag/digischolar14" data-widget-id="514153688852480002">#digischolar14 Tweets</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+          </section>
+        </section>
+
+      </aside>
 
     </section>
 
@@ -75,7 +203,9 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="javascripts/vendor/jquery.fancybox.pack.js"></script>
     <script src="javascripts/main.js"></script>
+    <script src="javascripts/vendor/helpers/jquery.fancybox-media.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

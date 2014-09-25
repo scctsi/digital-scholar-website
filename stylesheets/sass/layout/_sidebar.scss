@@ -1,3 +1,31 @@
-sidebar {
+aside {
 	@include span-columns(3);
+  margin-top: 40px;
+  font-size: 14px;
+
+  h3 {
+    font-size: 16px;
+  }
+
+  ul.partners {
+    font-size: 16px;
+    margin-top: 5px;
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    li:last-child {
+      margin-bottom: 5px;
+    }
+  }
+
+  #is-super-widget {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .twitter-timeline {
+    margin-top: 15px; 
+  }
 }
