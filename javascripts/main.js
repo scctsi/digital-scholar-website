@@ -16,4 +16,12 @@ $(document).ready(function() {
 			buttons : {}
 		}
 	});
+
+	// Video grid hover effects
+    $(".preview-image").mouseenter(function() {
+        $(this).addClass("hover");
+    })
+    .mouseleave(function() {
+        $(this).removeClass("hover");
+    });
 });

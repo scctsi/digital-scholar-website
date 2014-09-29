@@ -1,5 +1,10 @@
+.workshops {
+  @include span-columns(8);
+  padding-right: 15px;
+}
+
 .workshop {
-  @include span-columns(9);
+  margin-bottom: 35px;
 
   header {
     margin-bottom: 15px;
@@ -8,6 +13,7 @@
     h2 {
       font-size: 24px;
       color: #333;
+      line-height: 1.4em;
     }
   }
 
@@ -55,15 +61,43 @@
     margin-top: -10px;
     margin-left: 15px;
 
-    ul {
-      h4 {
-        font-weight: 700;
-      }
+    p {
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      font-weight: 700;
+    }
+
+    h4 + ul {
+      list-style: square;
+      margin-left: 30px;
 
       li {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
       }
     }
+
+    h4 + ol {
+      list-style: decimal;
+      margin-left: 15px;
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+
+    ol {
+      h4 {
+        margin-left: -15px;
+      }
+    }
+
+    ol ul {
+      margin-left: 15px;
+      list-style: square;
+    }
+
   }
 
   section.videos {
@@ -71,12 +105,15 @@
     margin-bottom: 15px;
   }
 
-  figure.video {
+  figure.video, figure.slides {
     float: left;
-    padding: 15px;
-    border: 1px solid #ccc;
-    margin-right: 30px;
+    margin-right: 20px;
     text-align: center;
+
+    img {
+      width: 150px;
+      height: 115px;
+    }
 
     a:hover {
       border-bottom: none;
@@ -88,7 +125,11 @@
       font-weight: 700;
       text-align: center;
       padding: 5px;
-      background: #eee;
+
+      i {
+        color: #000;
+        margin-left: 15px;
+      }
     }
   }
 }
