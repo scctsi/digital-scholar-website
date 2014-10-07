@@ -138,9 +138,10 @@ header.branding section.scctsi aside {
   color: #fff;
 }
 header.branding section.scctsi aside img {
-  margin-left: 65px;
+  margin-left: 135px;
   margin-right: 5px;
-  margin-top: -4px;
+  margin-top: -2px;
+  float: left;
 }
 header.branding section.scctsi aside li {
   margin-bottom: 5px;
@@ -185,7 +186,7 @@ aside {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
-  margin-top: 40px;
+  margin-top: 47px;
   font-size: 14px;
 }
 aside:last-child {
@@ -224,7 +225,7 @@ aside .twitter-timeline {
 }
 
 .workshop {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 .workshop header {
   margin-bottom: 15px;
@@ -238,6 +239,22 @@ aside .twitter-timeline {
   font-size: 24px;
   color: #333;
   line-height: 1.4em;
+  float: left;
+}
+.workshop header span.workshop-number {
+  background: #eee;
+  color: #666;
+  font-size: 14px;
+  margin-right: 5px;
+  width: 112px;
+  position: relative;
+  top: 55px;
+  letter-spacing: 2px;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 5px;
+  float: right;
+  border-left: 1px dotted #999;
 }
 .workshop h3 {
   font-size: 18px;
@@ -270,12 +287,27 @@ aside .twitter-timeline {
   display: none;
   font-size: 14px;
   line-height: 1.5em;
-  margin-bottom: 5px;
-  margin-top: -10px;
-  margin-left: 15px;
+  margin-bottom: 10px;
+  margin-top: -15px;
+  margin-left: 0px;
+  border: 1px solid #ddd;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  border-top: none;
+}
+.workshop .answer em {
+  font-style: italic;
+}
+.workshop .answer i {
+  margin-right: 10px;
+  float: left;
+  margin-top: 2px;
+  font-size: 18px;
 }
 .workshop .answer p {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .workshop .answer h4 {
   font-weight: 700;
@@ -311,12 +343,29 @@ aside .twitter-timeline {
 }
 .workshop figure.video, .workshop figure.slides {
   float: left;
-  margin-right: 20px;
+  margin-right: 45px;
+}
+.workshop figure.video .coming-soon, .workshop figure.slides .coming-soon {
+  width: 135px;
+  height: 105px;
+  background: #ccc;
+  color: #666;
+  text-transform: uppercase;
+  font-size: 16px;
   text-align: center;
 }
+.workshop figure.video .coming-soon p, .workshop figure.slides .coming-soon p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.workshop figure.video .coming-soon.second, .workshop figure.slides .coming-soon.second {
+  margin-left: 10px;
+}
 .workshop figure.video img, .workshop figure.slides img {
-  width: 150px;
-  height: 115px;
+  width: 135px;
+  height: 105px;
+  border: 1px solid #ccc;
 }
 .workshop figure.video a:hover, .workshop figure.slides a:hover {
   border-bottom: none;
@@ -411,34 +460,32 @@ aside .twitter-timeline {
   margin-left: -91px;
 }
 
-section.videos {
-  padding-left: 15px;
-}
 section.videos .preview-image {
   position: relative;
   float: left;
-  width: 225px;
-  height: 200px;
+  width: 240px;
   overflow: hidden;
   margin-right: 0px;
 }
 section.videos .preview-image img {
-  width: 225px;
-  height: 200px;
+  width: 100%;
   display: block;
   margin: 0;
   padding: 0;
   max-width: 100%;
   height: auto;
 }
-section.videos .preview-image:nth-child(n) {
-  margin-right: 5px;
+section.videos .preview-image figcaption {
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  width: auto;
+  top: 105px;
+  float: left;
+  left: 10px;
+  position: absolute;
 }
-section.videos .preview-image:last-child {
-  margin-right: 0;
-}
-
-.overlay {
+section.videos .overlay {
   display: block;
   position: absolute;
   z-index: 20;
@@ -446,8 +493,11 @@ section.videos .preview-image:last-child {
   overflow: hidden;
   transition: all 0.5s;
 }
-
-a.close-overlay {
+section.videos .overlay i {
+  margin-left: 6px;
+  margin-top: 2px;
+}
+section.videos a.close-overlay {
   display: block;
   position: absolute;
   top: 0;
@@ -463,12 +513,10 @@ a.close-overlay {
   background-color: #000;
   cursor: pointer;
 }
-
-a.close-overlay.hidden {
+section.videos a.close-overlay.hidden {
   display: none;
 }
-
-a.expand {
+section.videos a.expand {
   display: block;
   position: absolute;
   z-index: 100;
@@ -482,16 +530,14 @@ a.expand {
   font-size: 30px;
   border-radius: 30px;
 }
-
-.effect-5 .overlay {
+section.videos .effect-5 .overlay {
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   opacity: 0;
 }
-
-.effect-5 .overlay a.expand {
+section.videos .effect-5 .overlay a.expand {
   top: 0;
   bottom: 0;
   left: 0;
@@ -509,12 +555,10 @@ a.expand {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-
-.effect-5 .preview-image.hover .overlay {
+section.videos .effect-5 .preview-image.hover .overlay {
   opacity: 1;
 }
-
-.effect-5 .preview-image.hover .overlay a.expand {
+section.videos .effect-5 .preview-image.hover .overlay a.expand {
   width: 60px;
   height: 60px;
   -webkit-border-radius: 30px;
@@ -522,4 +566,33 @@ a.expand {
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
   border-radius: 30px;
+}
+
+body.video-grid section.content {
+  padding: 0px 0px 0px 0px;
+}
+body.video-grid section.content header {
+  padding: 15px;
+  background: #fff;
+}
+body.video-grid section.content header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body.video-grid section.content header h3 {
+  font-size: 26px;
+  float: left;
+  padding-left: 225px;
+  margin-left: 25px;
+  border-left: 1px dotted #ccc;
+  text-align: center;
+}
+body.video-grid section.content header div.back-link {
+  font-size: 14px;
+  float: left;
+  margin-top: 10px;
+}
+body.video-grid section.content header div.back-link i {
+  margin-right: 10px;
 }

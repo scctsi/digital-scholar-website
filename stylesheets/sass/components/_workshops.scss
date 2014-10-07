@@ -4,7 +4,7 @@
 }
 
 .workshop {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 
   header {
     margin-bottom: 15px;
@@ -14,6 +14,23 @@
       font-size: 24px;
       color: #333;
       line-height: 1.4em;
+      float: left;
+    }
+
+    span.workshop-number {
+      background: #eee;
+      color: #666;
+      font-size: 14px;
+      margin-right: 5px;
+      width: 112px;
+      position: relative;
+      top: 55px;
+      letter-spacing: 2px;
+      padding: 5px;
+      text-align: center;
+      margin-bottom: 5px;
+      float: right;
+      border-left: 1px dotted #999;
     }
   }
 
@@ -57,12 +74,29 @@
     display: none;
     font-size: 14px;
     line-height: 1.5em;
-    margin-bottom: 5px;
-    margin-top: -10px;
-    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: -15px;
+    margin-left: 0px;
+    border: 1px solid #ddd;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border-top: none;
+
+    em {
+      font-style: italic;
+    }
+
+    i {
+      margin-right: 10px;
+      float: left;
+      margin-top: 2px;
+      font-size: 18px;
+    }
 
     p {
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
 
     h4 {
@@ -107,12 +141,32 @@
 
   figure.video, figure.slides {
     float: left;
-    margin-right: 20px;
-    text-align: center;
+    margin-right: 45px;
+
+    .coming-soon {
+      width: 135px;
+      height: 105px;
+      background: #ccc;
+      color: #666;
+      text-transform: uppercase;
+      font-size: 16px;
+      text-align: center;
+
+      p {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .coming-soon.second {
+      margin-left: 10px;
+    }
 
     img {
-      width: 150px;
-      height: 115px;
+      width: 135px;
+      height: 105px;
+      border: 1px solid #ccc;
     }
 
     a:hover {
