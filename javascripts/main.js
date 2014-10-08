@@ -32,11 +32,11 @@ $(document).ready(function() {
     });
 	});
 
-	// Video grid hover effects
-    $(".preview-image").mouseenter(function() {
-        $(this).addClass("hover");
-    })
-    .mouseleave(function() {
-        $(this).removeClass("hover");
-    });
+  // Video grid hover effects
+  $(".trainee-voices figure").mouseenter(function() {
+    $(this).addClass("hover");
+  })
+  .mouseleave(function() {
+    $(this).removeClass("hover");
+  });
 });
