@@ -241,6 +241,9 @@ aside .twitter-timeline {
   line-height: 1.4em;
   float: left;
 }
+.workshop header h2.multiline {
+  margin-bottom: -30px;
+}
 .workshop header span.workshop-number {
   background: #eee;
   color: #666;
@@ -319,11 +322,11 @@ aside .twitter-timeline {
 .workshop .answer h4 + ul li {
   margin-bottom: 5px;
 }
-.workshop .answer h4 + ol {
+.workshop .answer ol {
   list-style: decimal;
-  margin-left: 15px;
+  margin-left: 18px;
 }
-.workshop .answer h4 + ol li {
+.workshop .answer ol li {
   margin-bottom: 5px;
 }
 .workshop .answer ol h4 {
@@ -381,6 +384,7 @@ aside .twitter-timeline {
 
 .widget {
   margin-bottom: 15px;
+  position: relative;
 }
 .widget:after {
   content: "";
@@ -437,6 +441,27 @@ aside .twitter-timeline {
   border-top-color: #ddd;
   border-width: 11px;
   margin-left: -91px;
+}
+.widget img {
+  width: 260px;
+}
+
+.widget .play-video {
+  position: absolute;
+  top: 90px;
+  left: 80px;
+  border-radius: 30px;
+  background: #eee;
+  padding: 5px 10px;
+  color: #000;
+  opacity: 0.9;
+}
+.widget .play-video i {
+  margin-left: 15px;
+}
+
+.widget.voices a:hover {
+  border-bottom: none;
 }
 
 .widget.featured h3 {
@@ -506,8 +531,14 @@ body.video-grid section.content header div.back-link i {
   background: #000;
   color: #fff;
   padding: 5px;
-  top: 105px;
+  top: 90px;
   left: 10px;
+  line-height: 1.25em;
+}
+
+.trainee-voices figure:nth-child(5) figcaption {
+  top: 75px;
+  width: 200px;
 }
 
 .overlay {

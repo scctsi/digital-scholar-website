@@ -50,9 +50,15 @@ body.video-grid {
     background: #000;
     color: #fff;
     padding: 5px;
-    top: 105px;
+    top: 90px;
     left: 10px;
+    line-height: 1.25em;
   }
+}
+
+.trainee-voices figure:nth-child(5) figcaption {
+  top: 75px;
+  width: 200px;
 }
 
 .overlay {

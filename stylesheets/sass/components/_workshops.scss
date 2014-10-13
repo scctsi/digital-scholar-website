@@ -17,6 +17,10 @@
       float: left;
     }
 
+    h2.multiline {
+      margin-bottom: -30px;
+    }
+
     span.workshop-number {
       background: #eee;
       color: #666;
@@ -112,9 +116,9 @@
       }
     }
 
-    h4 + ol {
+    ol {
       list-style: decimal;
-      margin-left: 15px;
+      margin-left: 18px;
 
       li {
         margin-bottom: 5px;
