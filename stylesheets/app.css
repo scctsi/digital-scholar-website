@@ -311,6 +311,7 @@ aside .twitter-timeline {
 }
 .workshop .answer p {
   margin-bottom: 5px;
+  line-height: 1.4em;
 }
 .workshop .answer h4 {
   font-weight: 700;
