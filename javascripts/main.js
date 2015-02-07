@@ -84,4 +84,12 @@ $(document).ready(function() {
   .mouseleave(function() {
     $(this).removeClass("hover");
   });
+
+  // Semester tabs
+  $('#tabs').easytabs( );
+
+  $("#tabs ul li").delegate('a', 'click', function(e){
+    e.preventDefault();
+    return false;
+  });
 });

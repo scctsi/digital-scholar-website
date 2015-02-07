@@ -1,6 +1,6 @@
 aside {
 	@include span-columns(4);
-  margin-top: 47px;
+  margin-top: 20px;
   font-size: 14px;
 
   h3 {
@@ -8,7 +8,6 @@ aside {
   }
 
   ul.partners {
-    font-size: 16px;
     margin-top: 5px;
 
     li {
@@ -17,6 +16,26 @@ aside {
 
     li:last-child {
       margin-bottom: 5px;
+    }
+  }
+
+  ul.news {
+    margin-left: 25px;
+    margin-top: 5px;
+
+    li {
+      line-height: 1.35em;
+      font-size: 14px;
+      padding-bottom: 10px;
+    }
+
+    li:last-child {
+      margin-bottom: 5px;
+      padding-bottom: 0px;
+    }
+
+    .fa-li {
+      color: #999;
     }
   }
 

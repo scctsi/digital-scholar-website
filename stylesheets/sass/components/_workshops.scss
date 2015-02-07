@@ -108,10 +108,12 @@
       font-weight: 700;
     }
 
-    h4 + ul {
+    ul {
       list-style: square;
       margin-left: 30px;
+    }
 
+    h4 + ul {
       li {
         margin-bottom: 5px;
       }
