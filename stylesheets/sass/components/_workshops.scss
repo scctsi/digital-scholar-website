@@ -3,43 +3,86 @@
   padding-right: 15px;
 }
 
+.separator {
+  height: 1px;
+  border-bottom: 1px dashed #999;
+  margin-bottom: 15px;
+}
+
 .workshop {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 
   header {
     margin-bottom: 15px;
+    font-size: 15px;
     @include clearfix;
+
+    section.workshop-description {
+      float: left;
+      width: 475px;
+      margin-top: 45px;
+      @include clearfix;
+    }
 
     h2 {
       font-size: 24px;
       color: #333;
       line-height: 1.4em;
-      margin-bottom: -30px;
+      margin-bottom: -40px;
     }
 
-    h4.sub-heading {
-      font-size: 20px;
+    h4 {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
       line-height: 1.4em;
-      margin-bottom: -40px;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 25px;
+      line-height: 1.4em;
+      margin-bottom: 10px;
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+
+    figure {
       margin-top: 50px;
-      color: #990000;
+      float: right;
+      width: 105px;
+      text-align: center;
+    }
+
+    figcaption {
+      font-weight: 700;
+      margin-top: 5px;
+      font-size: 14px;
     }
 
     span.workshop-number {
-      background: #eee;
-      color: #666;
-      font-size: 14px;
-      margin-right: 5px;
-      width: 112px;
       position: relative;
-      top: 55px;
-      letter-spacing: 2px;
-      padding: 5px;
-      text-align: center;
-      margin-bottom: 5px;
+      top: 52px;
       float: right;
-      border-left: 1px dotted #999;
     }
+  }
+
+  span.workshop-number {
+    background: #eee;
+    color: #666;
+    font-size: 14px;
+    margin-right: 5px;
+    width: 112px;
+    letter-spacing: 2px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-left: 1px dotted #999;
   }
 
   h3 {
@@ -96,6 +139,10 @@
       font-style: italic;
     }
 
+    strong {
+      font-weight: 700;
+    }
+
     i {
       margin-right: 10px;
       float: left;
@@ -142,7 +189,35 @@
       margin-left: 15px;
       list-style: square;
     }
+  }
 
+  h4.sub-heading {
+    font-size: 20px;
+    line-height: 1.4em;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    color: #990000;
+
+    & + span.workshop-number {
+      float: right;
+      margin-top: 7px;
+    }
+  }
+
+  h4.sub-heading + p {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  p.analysis-project-heading {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    color: #990000;
+  }
+
+  p.deadline {
+    margin-top: 10px;
   }
 
   section.media {
