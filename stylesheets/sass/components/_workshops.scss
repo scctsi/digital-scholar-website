@@ -222,14 +222,20 @@
     }
   }
 
-  h4.sub-heading + p {
-    font-size: 15px;
-    margin-bottom: 15px;
+  h4.sub-heading.student-workshop-projects {
+    margin-top: 30px;
   }
-
 
   h4.sub-heading.peer-evaluation {
     margin-top: 30px;
+
+    + div {
+      p {
+        font-size: 15px;
+        margin-bottom: 10px;
+        line-height: 1.4em;
+      }
+    }
   }
 
   p.analysis-project-heading {

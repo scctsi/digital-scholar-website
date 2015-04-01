@@ -4,7 +4,7 @@ $(document).ready(function() {
 	  $(this).toggleClass('open');
 	});
 
-	$('.fancybox-media').attr('rel', 'media-gallery').fancybox({
+	$('.fancybox-media').attr('rel', '.media-gallery').fancybox({
 		openEffect : 'none',
 		closeEffect : 'none',
 		prevEffect : 'none',
@@ -93,7 +93,7 @@ $(document).ready(function() {
   });
 
   // Video grid hover effects
-  $(".trainee-voices figure").mouseenter(function() {
+  $(".media-gallery figure").mouseenter(function() {
     $(this).addClass("hover");
   })
   .mouseleave(function() {
@@ -143,6 +143,35 @@ $(document).ready(function() {
     setFooterText(tab.context.hash);
   });
 
-  $('#tabs').easytabs( );
+  if ($('#tabs').length > 0)   {
+    $('#tabs').easytabs( );
+  }
+
+  // Peer Evaluation - Disallow choosing your own infographic
+  function disableRadioButtons(groupNumber) {
+    $('body.peer-evaluation input[type=radio]').prop('disabled', false);
+    $('body.peer-evaluation tr td:nth-child(' + (groupNumber + 1) + ') input[type=radio]').prop('disabled', true);
+    $('body.peer-evaluation tr td:nth-child(' + (groupNumber + 1) + ') input[type=radio]').prop('checked', false);
+  }
+
+  $('body.peer-evaluation input[type="submit"]').attr('disabled','disabled');
+
+  $('body.peer-evaluation select').change(function() {
+    var groups = { 
+      "1": ["Chuqing Yao", "Ning Huang", "Benjamin Brekke"],
+      "2": ["Sanket Pathak", "Barbara Lam", "Sharon Hsu"],
+      "3": ["Charlie Zhong", "Allison Trinidad", "Eldin Dzubur", "Shijia Wang"],
+      "4": ["Janeane Anderson", "Ying Han", "Kalesi Corbin", "Elena Taylor-Munoz"],
+      "5": ["Siqi Wu", "Patricia Escobedo"]
+    };
+    var selectedName = $('body.peer-evaluation select').val();
+    var groupNumber;
+
+    for (groupNumber = 1; groupNumber < 6; groupNumber++ ) {
+      if (groups[groupNumber].indexOf(selectedName) >= 0) {
+        disableRadioButtons(groupNumber);
+      }
+    }
+  });
 });
 

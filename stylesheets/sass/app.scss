@@ -22,10 +22,12 @@
 // Components and modules
 @import "components/workshops";
 @import "components/widgets";
-@import "components/videos";
+@import "components/media_gallery";
 @import "components/tabs";
+@import "components/formstack_forms";
 
 // Page-specific stylesheets
+@import "pages/peer_evaluation";
  
 // Themes
 
