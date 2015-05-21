@@ -107,6 +107,7 @@ $(document).ready(function() {
     if(semester == '#spring-2015') {
       footerHtml = '<p>The Spring 2015 workshop was supported by a Data-Driven Assignment Grant from the <a href="https://cst.usc.edu/" target="_blank">USC Center for Scholarly Technology</a> in support of the Office of the Provost\’s strategic focus on data literacy and SC CTSI\'s Education (ECDE) and electronic Home (eHome) programs. <a href="http://www.sc-ctsi.org" target="_blank">SC CTSI</a> is part of the Clinical and Translational Science Awards (CTSA) network funded through the National Center for Advancing Translational Sciences (NCATS) at the NIH (Grant Number UL1TR000130).</p>';
       $('.report-2014').hide();
+      $('.report-2015').show();
       $('.tweets-2014').hide();
       $('.tweets-2015').show();
       $('.partners-widget').hide();
@@ -116,6 +117,7 @@ $(document).ready(function() {
     if(semester == '#fall-2014') {
       footerHtml = '<p>The launch of the Digital Scholar Training Initiative was supported by the <a href="https://research.usc.edu/" target="_blank">USC Office of Research</a> and SC CTSI\'s Education (ECDE), Research Development (RD), and electronic Home (eHome) programs. <a href="http://www.sc-ctsi.org" target="_blank">SC CTSI</a> is part of the Clinical and Translational Science Awards (CTSA) network funded through the National Center for Advancing Translational Sciences (NCATS) at the NIH (Grant Number UL1TR000130).</p>';
       $('.report-2014').show();
+      $('.report-2015').hide();
       $('.tweets-2014').show();
       $('.tweets-2015').hide();
       $('.partners-widget').show();
@@ -127,6 +129,8 @@ $(document).ready(function() {
 
   if (window.location.href.indexOf('spring-2015') > -1) {
     setFooterText('#spring-2015');
+    $('.report-2014').hide();
+    $('.report-2015').show();
     $('.tweets-2014').hide();
     $('.tweets-2015').show();
     $('.partners-widget').hide();
@@ -135,6 +139,8 @@ $(document).ready(function() {
 
   if (window.location.href.indexOf('fall-2014') > -1) {
     setFooterText('#fall-2014');
+    $('.report-2014').show();
+    $('.report-2015').hide();
     $('.tweets-2014').show();
     $('.tweets-2015').hide();
     $('.partners-widget').show();
